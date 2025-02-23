@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matheus Thierry</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Sobre mim</a>
+                </li>
+                <li>
+                    <a href="project.html">Projetos</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contato</a>
+                </li>
+            </ul>
+        </nav>
+
+        <header>
+            <div class="center">
+                <img src="./img/IMG-20241117-WA0016.png" alt="Imagem de Matheus Thierry Santos da Silva">
+            </div>
+            <h1>Matheus Thierry Santos da Silva</h1>
+            <h2>Aluno de ADS da Unimar</h2>
+        </header>
+
+        <main>
+            <section id="sobreMim">
+                <h3>Sobre mim</h3>
+                <p>
+                    Olá, meu nome é Matheus Thierry Santos da Silva, tenho 19 anos e sou estudante de Análise e Desenvolvimento de Sistemas na Unimar. Sou apaixonado por programação e tecnologia, buscando sempre aprimorar meus conhecimentos em diversas áreas da área de TI. Tenho interesse em desenvolvimento de software, automação e inovação, e estou constantemente em busca de novos desafios. <br><br>
+
+                    Além de programar, também gosto de estudar sobre novas tecnologias, ler sobre temas diversos e explorar minha criatividade através do desenho. No meu tempo livre, gosto de ouvir músicas, o que me ajuda a relaxar e me concentrar melhor nas minhas atividades.<br><br>
+
+                    Estou sempre em busca de aprendizado contínuo e de oportunidades para aplicar o que estou aprendendo em projetos práticos, seja no contexto acadêmico ou em atividades extracurriculares. Acredito que a colaboração e o trabalho em equipe são fundamentais para alcançar soluções inovadoras, e sempre busco aprender com outros profissionais da área.
+                </p>
+            </section>
+            
+            <section id="formacao">
+                <h3>Formação</h3>
+                <p>
+                    Ensino Médio - Interação <br>
+                    Período: 01/2017 - 11/2023 <br><br>
+                    Ensino Superior - Unimar <br>
+                    Período: 01/2024 - 12/2026
+                </p>
+            </section>
+
+            <section id="cursos">
+                <h3>Cursos</h3>
+                <p>
+                    Bootcamp Jovem Programador - Unimar <br>
+                    Período: 08/2024 - 09/2024 <br><br>
+
+                    Programção em Python no Raspberry - Senai <br>
+                    Período: 04/2024 - 05/2024<br><br>
+
+                    Implantação de Serviços em Nuvem - Microsoft AZ-900 <br>
+                    Período: 03/2024 - 04/2024 <br><br>
+
+                    Jornada Python - Hashtag treinamentos <br>
+                    Período: 01/2024 - 01/2024 <br><br>
+
+                    Semana do Excel - Hashtag treinamentos <br>
+                    Período: 01/2024 - 01/2024 <br><br>
+                </p>
+            </section>
+        </main>
+
+        <footer>
+            <a href="https://github.com/Thierry2210" target="_blank" rel="noopener noreferrer" onclick="socialAlert('GitHub')">
+                <img src="./img/github.png" alt="GitHub">
+                <p>Github</p>
+            </a>
+            <a href="https://www.linkedin.com/in/matheus-thierry-4512842b3/" target="_blank" rel="noopener noreferrer" onclick="socialAlert('LinkedIn')">
+                <img src="./img/linkedin.png" alt="LinkedIn">
+                <p>Linkedin</p>
+            </a>
+            <a href="https://www.instagram.com/mthierry_/" target="_blank" rel="noopener noreferrer" onclick="socialAlert('Instagram')">
+                <img src="./img/instagram.png" alt="Instagram">
+                <p>Instagram</p>
+            </a>
+        </footer>
+    </div>
+
+    <script>
+        function toggleSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section.style.display === "none") {
+                section.style.display = "block";
+            } else {
+                section.style.display = "none";
+            }
+        }
+
+        function socialAlert(platform) {
+            alert(`Você está sendo redirecionado para o ${platform}.`);
+        }
+    </script>
+</body>
+
+</html>
